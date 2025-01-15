@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+#dashboard {
+  margin: 20px;
+}
+
+.dashboard-summary {
+  margin-bottom: 10px;
+}
+
+.dashboard-summary p {
+  font-size: 18px;
+}
+
+.botoes-limpeza {
+  margin-top: 10px;
+}
+
+.botoes-limpeza button {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#formularios {
+  margin: 20px;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+input[type="text"], input[type="date"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#relatorios {
+  margin: 20px;
+}
+
+#relatorios ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#relatorios li {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+#relatorios li span {
+  font-weight: bold;
+}
+
+#relatorios li.gasto {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+#relatorios li.lucro {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.saldo-positivo {
+  color: green;
+}
+
+.saldo-negativo {
+  color: red;
+}
+
