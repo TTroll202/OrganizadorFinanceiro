@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organização Financeira</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Organização Financeira</h1>
+  </header>
+
+  <section id="dashboard">
+    <h2>Dashboard</h2>
+    <div class="dashboard-summary">
+      <p>Lucros Totais: R$ <span id="lucrosTotais">0,00</span></p>
+      <p>Gastos Totais: R$ <span id="gastosTotais">0,00</span></p>
+      <p>Saldos Totais: R$ <span id="saldosTotais">0,00</span></p>
+    </div>
+    </section>
+
+  <section id="formularios">
+    
+      <form id="formLucros">
+        <h3>Adicionar Lucro</h3>
+        <input type="text" id="descricaoLucro" placeholder="Descrição" required>
+        <input type="text" id="valorLucro" placeholder="Valor (ex: 100,00)" required>
+        <input type="date" id="dataLucro" required>
+        <input type="text" id="bancoLucro" placeholder="Banco" required>
+        <button type="submit">Adicionar Lucro</button>
+      </form>
+    </div>
+    <div>
+      <form id="formGastos">
+        <h3>Adicionar Gasto</h3>
+        <input type="text" id="descricaoGasto" placeholder="Descrição" required>
+        <input type="text" id="valorGasto" placeholder="Valor (ex: 100,00)" required>
+        <input type="date" id="dataGasto" required>
+        <input type="text" id="bancoGasto" placeholder="Banco" required>
+        <button class="buttonGasto" type="submit">Adicionar Gasto</button>
+      </form>
+    </div>
+    <div>
+  </section>
+
+  <section id="relatorios">
+    <h2>Relatórios</h2>
+    <div id="listaLucros">
+      <h3>Lucros</h3>
+      <ul id="lucrosList"></ul>
+      <div class="botoes-limpeza-lucro"><button id="limparLucrosSelecionados" class="AddLucro">Limpar Lucros</button></div>
+    </div>
+
+    <div id="listaGastos">
+      <h3>Gastos</h3>
+      <ul id="gastosList"></ul>
+      <div class="botoes-limpeza-gasto"><button id="limparGastosSelecionados" class="AddGastos">Limpar Gastos</button></div>
+    </div>
+  </section>
+  
+    
+  
+  <script src="script.js"></script>
+</body>
+</html>
